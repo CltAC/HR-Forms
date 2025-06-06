@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HR Forms Portal</title>
+  <style>
+    body { font-family: Arial; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #004080; color: white; padding: 20px; text-align: center; }
+    nav { background: #ddd; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #004080; }
+    section { padding: 20px; }
+    .form-card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+    .back-button { background: #004080; color: white; padding: 10px 20px; text-align: center; border-radius: 5px; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Company HR Portal</h1>
+    <p>Welcome! Access and submit your HR forms here.</p>
+    <a href="https://ihvac.sharepoint.com/sites/StockInventory" class="back-button">Back to SharePoint</a>
+  </header>
+  <nav>
+    <a href="#new-hires">New Hires</a>
+    <a href="#existing">Existing Employees</a>
+    <a href="#contact">Contact HR</a>
+  </nav>
+  <section id="new-hires">
+    <h2>New Hire Forms</h2>
+    <div class="form-card">
+      <h3>W-4 Form</h3>
+      <p><a href="https://www.irs.gov/pub/irs-pdf/fw4.pdf" target="_blank">Download W-4</a></p>
+      <p>Upload completed form: <input type="file"></p>
+    </div>
+    <div class="form-card">
+      <h3>I-9 Form</h3>
+      <p><a href="https://www.uscis.gov/sites/default/files/document/forms/i-9.pdf" target="_blank">Download I-9</a></p>
+      <p>Upload completed form: <input type="file"></p>
+    </div>
+  </section>
+  <section id="existing">
+    <h2>Employee Updates</h2>
+    <div class="form-card">
+      <h3>Change of Address</h3>
+      <form>
+        <label>New Address: <input type="text" name="address"></label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Human Resources</h2>
+    Email: hr@i-hvac.net<br>
+    Phone: (704) 596-3119<br>
+  </section>
+</body>
+</html>
